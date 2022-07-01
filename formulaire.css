@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+body{
+    background-color: rgb(21, 21, 34);
+    text-align: center;
+}
+
+.main{
+    font: 17px/1.5 "Helvetica Neue",Helvetica,Arial ;
+    padding: 10px;
+    height: auto;
+    margin: 0px 10% 0px 10%;
+    box-shadow: 2px;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+}
+
+.pigure{
+    text-align: center;
+    height: calc(120vh+15px);
+    width: 35%;
+    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+/*--element area--*/
+.firstname-class{
+    grid-area: firstname;
+}
+
+.lastname-class{
+    grid-area: lastname;
+}
+.email-class{
+    grid-area: email;
+}
+.tel-class{
+    grid-area: tel;
+}
+
+.password-class{
+    grid-area: password;
+}
+
+.confirme-password-class{
+    grid-area: confirme;
+}
+
+.text-class{
+    grid-area: text;
+}
+
+/* element area */
+.formule{
+    font: 17px ;
+    background-color: rgb(246, 251, 252);
+    width: 65%;
+    padding: 5px 3px 15px 0px;
+    height: 120vh;
+}
+
+form {
+    background-color: white;
+    box-shadow: 2px 15px 10px gray;
+    margin: 1vh 3% 5% 0%;
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2,max(40%,150px));
+    grid-template-rows: repeat(4,1fr) ;
+    grid-template-areas: "text text" "firstname lastname" "email tel" "password confirme";
+    gap: 0px 5px;
+    width: 97%;
+    padding-left: 3%;
+
+    
+}
+
+label{
+    font-size: 13px;
+    display: block;
+    text-transform:uppercase ;
+}
+
+.text{
+    margin: 7% 3% 0% 3%;
+}
+
+form input{
+   padding: 7px;
+    width: 110%;
+    border-radius: 5px;
+    
+}
+form label{
+text-align: start;
+}
+
+.compte{
+    margin: 1vh 3% 1% 3%;
+}
+
+input[type="submit"]{
+    
+    background-color: rgb(17, 82, 82);
+    border-radius: 5px;
+    border: 1px solid;
+    font: 15px roboto;
+    color: #ffff;
+    padding: 10px;
+}
+
+input:first{
+    border: 2px solid green;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+input:invalid {
+    border: 2px solid rgb(47, 172, 255);
+}
+
+form div{
+width: 60%;
+display: flex;
+flex-direction: column ;
+}
+
+
+
+
+
+@media screen and (max-width: 726px) {
+    .main{
+        font: 17px/1.5 "Helvetica Neue",Helvetica,Arial ;
+        
+        
+        margin: 0px 0% 0px 0%;
+        box-shadow: 2px;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        
+       
+}
+.pigure{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+.formule{
+    font: 17/2 ;
+    background-color: white;
+    width: 100%;
+    flex:2 1 20%;
+    align-self: center;
+   
+    
+}
+label{
+    font:12px sans-serif;
+    display: block;
+    text-transform:uppercase ;
+}
+form {
+    height: auto;
+    width: auto;
+    background-color: white;
+    box-shadow: 2px gray;
+    margin: 10px;
+    padding-top: 2vh;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(7,1fr) ;
+    grid-template-areas: "text " "firstname" "lastname" "email" "tel" "password" "confirme";
+    row-gap: 10px;
+    
+   
+
+    
+}
+body{
+    /*background-color: white;*/
+    text-align: center;
+    padding: 0;
+}
+form input{
+    padding: 7px;
+    width: 95%;
+    
+
+
+}
+
+
+}
+.login{
+    margin-left: 3%;
+}
+
+a>img{
+width: 25%;
+height: 25%;
+}
+
+.pigure a{
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    text-decoration: none;
+    color: #fff;
+    font: 9em Cookie;
+    background-color: rgba(21, 21, 34, .6);
+}
+span{
+    
+    align-self: center;
+  
+    
+}
